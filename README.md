@@ -5,7 +5,7 @@
 ## 自动提交并添加备注
 
 ```
-commit_helper.sh
+source commit_helper.sh
 ```
 - 如果是位于 master 分支，会被要求输入一个分支名并自动创建
 - 如果没有添加内容，会被要求先添加
@@ -17,7 +17,7 @@ commit_helper.sh
 ## 自动推送新分支
 
 ```
-push_new_branch.sh
+source push_new_branch.sh
 ```
 - 自动将当前分支推送到以当前分支命名的远程分支
 - 推送后切回 master
@@ -26,7 +26,7 @@ push_new_branch.sh
 ## 自动更新主分支并清理已合并的分支
 
 ```
-update_master.sh
+source update_master.sh
 ```
 - 更新前先暂存已修改的内容并记录当前分支名
 - 切到 master 并拉去主分支
