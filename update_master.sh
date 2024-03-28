@@ -13,7 +13,14 @@ then
     echo '变更未提交，自动暂存'
     stash_status=true
 else
-    echo '无变更，无需暂存'
+    if [[ $result =~ '保存工作目录和索引状态' ]]
+    then
+        echo '变更未提交，自动暂存'
+        stash_status=true
+    else
+        echo '无变更，无需暂存'
+    fi
+
 fi
 
 echo ''
