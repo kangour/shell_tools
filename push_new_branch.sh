@@ -45,8 +45,9 @@ echo "http_url: $http_url"
 
 # 拼接创建合并请求的URL
 merge_request_url="${http_url}/merge_requests/new?merge_request%5Bsource_branch%5D=${current_branch}&merge_request%5Btarget_branch%5D=${target_merge_branch}"
-echo "merge request:"
 echo ""
+echo ""
+echo "merge request:"
 echo ""
 echo "$merge_request_url"
 echo ""
